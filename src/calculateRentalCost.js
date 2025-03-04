@@ -4,18 +4,18 @@
  * @return {number}
  */
 function calculateRentalCost(days) {
-  const totalCost = days * 40;
+  const totalCosts = days * 40;
 
   if (days >= 7) {
-    return totalCost - 50;
+    return totalCosts - 50;
   }
 
   if (days >= 3) {
-    return totalCost - 20;
+    return totalCosts - 20;
   }
 
   if (days < 3) {
-    return totalCost;
+    return totalCosts;
   }
 }
 
